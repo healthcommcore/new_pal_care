@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.schedule_day
+id: node.schedule_day.title
+field_name: title
+entity_type: node
+bundle: schedule_day
+label: 'Day number and day of week'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

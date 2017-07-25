@@ -1,0 +1,35 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_time_blocks
+    - node.type.schedule_day
+    - paragraphs.paragraphs_type.time_block_master
+  module:
+    - entity_reference_revisions
+id: node.schedule_day.field_time_blocks
+field_name: field_time_blocks
+entity_type: node
+bundle: schedule_day
+label: 'Time blocks'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      time_block_master: time_block_master
+    target_bundles_drag_drop:
+      basic_content_block:
+        weight: 4
+        enabled: false
+      time_block_fields:
+        weight: 5
+        enabled: false
+      time_block_master:
+        enabled: true
+        weight: 6
+field_type: entity_reference_revisions
