@@ -8,6 +8,7 @@
 /web/profiles/contrib/
 /web/libraries/
 /web/backups
+/web/php.ini*
 
 # Ignore sensitive information
 /web/sites/*/settings.php
